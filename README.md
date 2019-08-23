@@ -4,4 +4,6 @@ This is my entry for the final project in the web development 101 course for [Th
 
 Concept Design in Adobe XD:
 
-![Design preview](https://github.com/HornMichaelS/pomodoro/raw/master/design.png)
+<div style="text-align: center;">
+  <img style="border: 1px solid #EEE;" alt="Web app concept art" src="https://github.com/HornMichaelS/pomodoro/raw/master/design.png" height="400px" />
+</div>
