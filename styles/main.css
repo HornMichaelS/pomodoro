@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
+@font-face {
+  font-family: 'Alba';
+  src: url('/fonts/alba/alba-webfont.woff2') format('woff2'), url('/fonts/alba/alba-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --theme-color: #FF4570;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow: none;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.timer-container {
+  padding: 3%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+.main-view {
+  flex-grow: 1;
+  padding: 10% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+.timer-display {
+  font-size: 70pt;
+  text-align: center;
+  line-height: 50pt;
+  color: #FF4570;
+  font-family: Alba, Arial, Helvetica, sans-serif;
+}
+
+.setting-container, .setting-container button {
+  font-size: 30pt;
+  letter-spacing: 5px;
+  color: #606060;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.setting-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.setting-title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.setting-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.setting-control, .setting-control button {
+  font-size: 40pt;
+}
+
+.timer-controls-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--theme-color);
+  height: 70px;
+  box-shadow: 2px 2px 6px rgba(92, 13, 13, 0.25);
+  border-radius: 20px;
+}
+
+.timer-controls-container button {
+  color: white;
+}
