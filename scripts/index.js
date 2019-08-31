@@ -87,7 +87,7 @@
       }
 
       updateTimerDisplay();
-    }, 50);
+    }, 1000);
   }
 
   function pauseCountdown() {
