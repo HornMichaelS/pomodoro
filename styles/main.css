@@ -12,7 +12,7 @@
 }
 
 body, html {
-  height: 101vh;
+  height: 90vh;
   width: 100%;
   margin: 0;
   display: flex;
@@ -52,6 +52,27 @@ button:active, img:active {
   flex-direction: column;
   align-items: stretch;
   justify-content: space-around;
+}
+
+.mode-display {
+  text-align: center;
+  font-size: 20pt;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+}
+
+.mode-display span {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.stopped span, .in-session span {
+  background-color: var(--theme-color);
+}
+
+.on-break span {
+  background-color: green;
 }
 
 .timer-display {
@@ -103,4 +124,32 @@ button:active, img:active {
 
 .timer-controls-container button {
   color: white;
+}
+
+@media (max-width: 575.98px) {
+  .main-view {
+    padding-bottom: 0;
+  }
+  .setting-title {
+    margin-bottom: 0;
+  }
+  .setting-control, .setting-control button {
+    font-size: 30pt !important;
+  }
+  .setting-container, .setting-container button {
+    font-size: 20pt;
+    letter-spacing: 2px;
+    color: #606060;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 575.98px) {
+  body, html {
+    height: 90vh;
+  }
+  .timer-container {
+    max-width: 500px;
+  }
 }
